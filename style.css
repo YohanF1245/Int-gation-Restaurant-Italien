@@ -25,7 +25,9 @@ img{
 nav{
     height: 20vh;
 }
-
+a{
+    text-decoration: none;
+}
 ul{
     margin-right: 0;
     margin-left:auto;
@@ -38,7 +40,7 @@ ul>li{
     margin-left: auto;
     margin-right:0;
     display: inline-block;
-    width:auto;
+    /* width:auto; */
     padding-left:15px;
     padding-right: 15px;
 }
@@ -73,26 +75,38 @@ ul>li>a{
     
 }
 #mamanS1LeftEstRelou{
-    height: 70%;
+    height: 90%;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+.linkButton{
+    margin-left: 20%;
+    padding:0;
+    font-size:2.8rem;
+    color:#27292c;
+    background-color: white;
+    display: block;
+    width: fit-content;
+    padding:2rem;
+    border-radius: 90px;
+    font-family: 'Open Sans', sans-serif,bold;
+
 }
 #s1Left>#mamanS1LeftEstRelou>img{
     padding-left: 0;
-    margin-left: 10%;
-    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-bottom: 3rem;
 }
 #s1Left>#mamanS1LeftEstRelou>*{
-    padding-left: 10%;
+    margin-left: 15%;
 }
 #s1Left>#mamanS1LeftEstRelou>p{
     font-size: 2.3rem;
     color:white;
-    padding:0 10%;
 }
 #s1Right{
-        width:50%;
+    width:50%;
     display: inline-block;
     letter-spacing: normal;
     position: relative;
@@ -112,11 +126,12 @@ header{
     background-repeat: no-repeat;
 }
 #patopesto{
-    width: 10%;
+    width: 65%;
+    
     position:absolute;
     
-    top:-250px;
-    left:250px;
+    top:-200px;
+    left:300px;
     
 }
 #sauce{
@@ -131,30 +146,14 @@ header{
     margin: auto;
     border-radius:20px;
 }
-#serchBar:focus{
-    border:0;
-    margin:0;
-    outline:none;
-    background-color: none;
-    box-shadow: none;
-    -webkit-tap-highlight-color: transparent;
-    box-shadow: none;
-}
-#serchBar::selection{
-    border:0;
-    margin:0;
-    outline:none;
-    background-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-    box-shadow: none;
-}
+
 #basilik1{
     position: absolute;
-    width:70%;
+    width:65%;
     left:100%;
-    transform: translate(-90%,0);
-    top:250px;
-    right:100px;
+    transform: translate(-88%,0);
+    top:260px;
+    right:250px;
 }
 #chiefHat{
     border-left:15%;
@@ -162,11 +161,39 @@ header{
     background-color: white;
     width:15%;
 }
+.searchBarDiv{
+    height: 100%;
+    position: relative;
+}
 #searchButton{
+    height: 80%;
     cursor:pointer;
     z-index: 99;
+    position:absolute;
+    top:50%;
+    left:100%;
+    transform: translate(-100%,-50%)
+    
+    
 }
 #searchButton:hover{
-    background-color: bisque;
-    border:1px solid red;
+    background-color: none;
+    
+}
+#s2{
+    height: 150vh;
+    background-color: white;
+}
+.linkButtonBlack{
+    margin-left: 20%;
+    padding:0;
+    font-size:2.8rem;
+    color:white;
+    background-color: black;
+    display: block;
+    width: fit-content;
+    padding:2rem;
+    border-radius: 90px;
+    font-family: 'Open Sans', sans-serif,bold;
+
 }
