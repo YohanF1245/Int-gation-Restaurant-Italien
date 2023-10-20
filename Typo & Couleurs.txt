@@ -1,0 +1,10 @@
+Typo :
+OpenSans Bold
+OpenSans Bold Italic
+OpenSans Italic
+Montserrat Regular
+Reey Regular
+
+Couleurs :
+#27292c
+#ffffff
