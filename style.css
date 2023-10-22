@@ -4,7 +4,46 @@
     font-family: "reey";
     src: url("fonts/Reey-Regular.ttf.woff");
 }
-
+#navBar{
+    padding:0.5rem;
+    position: fixed;
+    z-index: 99;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    top:50%;
+    left:1%;
+    transform: translate(0,-50%);
+    border-radius: 50px;
+    width: 2rem;
+    background-color: rgba(211, 211, 211, 0.50);
+}
+.radioLabel input{
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+        
+}
+.checkMark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color:lightcoral;
+    border-radius: 50%;
+  }
+.radioLabel{
+    height: calc(70%/9);
+    width: 2rem;
+    position: relative;
+}
+.radioLabel input:checked ~ .checkMark{
+    background-color: lightblue;
+}
 html{
     font-size: 10px;
     overflow-x: hidden;
@@ -404,6 +443,7 @@ header{
     position: absolute;
     width: 100%;
     top:-640px;
+    pointer-events: none;
 }
 #s5Pizza{
     position: relative;
@@ -412,6 +452,7 @@ header{
     top:-140px;
     left: 550px;
     filter: drop-shadow(20px 30px 23px #000000);
+    pointer-events: none;
 
 }
 #s5PizzaPart{
@@ -421,6 +462,7 @@ header{
     top:415px;
     left:310px;
     filter: drop-shadow(20px 30px 23px #000000);
+    pointer-events: none;
 }
 #s6{
     height: 130vh;
@@ -518,7 +560,7 @@ header{
     padding: 2%;
     border-radius: 50px;
     font-size: large;
-    z-index: 99;
+    z-index: 90;
 }
 #s7MailButton{
     width: 20%;
@@ -532,7 +574,7 @@ header{
     font-weight: 800;
     font-size: large;
     border:none;
-    z-index: 99;
+    z-index: 90;
 }
 #s7MailButton:hover{
     background-color: white;
