@@ -8,6 +8,11 @@ function parseSearch(){
 }
 function fillSearch(){
     document.getElementById("searchingText").innerHTML =("Recherche de "+sessionStorage.getItem("searchString")+" en cours ...");
+    
+    let checked = document.getElementById("s2Radio").checked = true;
+    console.log(checked)
+
+
 }
 function goToS1(){
     window.location.href = "#s1";
@@ -34,11 +39,44 @@ function goToS8(){
     window.location.href = "#s8";
 }
 // intersectionhandler
-var observer = new IntersectionObserver(function(entries) {
-	// isIntersecting is true when element and viewport are overlapping
-	// isIntersecting is false when element and viewport don't overlap
-	if(entries[0].isIntersecting === true)
+var observerS1 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) 
+		document.getElementById("s1Radio").checked = true;
+}, { threshold: [0] });
+var observerS2 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) 
 		document.getElementById("s2Radio").checked = true;
 }, { threshold: [0] });
+var observerS3 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) 
+		document.getElementById("s3Radio").checked = true;
+}, { threshold: [0] });
+var observerS4 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) 
+		document.getElementById("s4Radio").checked = true;
+}, { threshold: [0] });
+var observerS5 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) 
+		document.getElementById("s5Radio").checked = true;
+}, { threshold: [0] });
+var observerS6 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) 
+		document.getElementById("s6Radio").checked = true;
+}, { threshold: [0] });
+var observerS7 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) 
+		document.getElementById("s7Radio").checked = true;
+}, { threshold: [0] });
+var observerS8 = new IntersectionObserver(function(entries) {
+	if(entries[0].isIntersecting === true) 
+		document.getElementById("s8Radio").checked = true;
+}, { threshold: [0] });
 
-observer.observe(document.querySelector("#s2"));
+observerS1.observe(document.querySelector("#s1"));
+observerS2.observe(document.querySelector("#s2"));
+observerS3.observe(document.querySelector("#s3"));
+observerS4.observe(document.querySelector("#s4"));
+observerS5.observe(document.querySelector("#s5"));
+observerS6.observe(document.querySelector("#s6"));
+observerS7.observe(document.querySelector("#s7"));
+observerS8.observe(document.querySelector("#s8"));

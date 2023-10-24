@@ -24,15 +24,16 @@
         opacity: 0;
         cursor: pointer;
         height: 0;
-        width: 0;
-        
+        width: 0;  
 }
 .checkMark {
     position: absolute;
+    
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    left: 50%;
+    height: 20%;
+    width:20%;
+    transform: translate(-50%,0);
     background-color:lightcoral;
     border-radius: 50%;
   }
@@ -43,6 +44,10 @@
 }
 .radioLabel input:checked ~ .checkMark{
     background-color: lightblue;
+    height: 100%;
+    width: 100%;
+    left:0;
+    transform: translate(0,0);
 }
 html{
     font-size: 10px;
